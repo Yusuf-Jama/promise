@@ -1,10 +1,13 @@
-//console.log(fetch ("https://jsonplaceholder.typicode.com/users/1"))
-const emailRef = document.querySelector(".email")
-console.log(emailRef)
-
-fetch ("https://jsonplaceholder.typicode.com/users/1")
-.then((Response) => {
-    return Response.json()
-    }).then((data) => {
-        console.log(data)
+function getSubscriptionStatus() {
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve(`VIP`)
+        }, 2000)
     })
+}
+getSubscriptionStatus().then(response => console.log(response)) 
+async function main() {
+console.log(await getSubscriptionStatus())
+}
+
+main()
