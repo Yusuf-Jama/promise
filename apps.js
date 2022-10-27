@@ -1,13 +1,7 @@
-function getSubscriptionStatus() {
-    return new Promise ((resolve, reject) => {
-        setTimeout(() => {
-            resolve(`VIP`)
-        }, 2000)
-    })
+function oppositeBoolean(bool){
+    if (bool === true)
+    return false
+    if (bool === false)
+    return true
 }
-getSubscriptionStatus().then(response => console.log(response)) 
-async function main() {
-console.log(await getSubscriptionStatus())
-}
-
-main()
+console.log(oppositeBoolean(false))
