@@ -1,5 +1,9 @@
-function reverseString(str) {
-    return str.split(``).reverse().join(``)
+function fName(num){
+    let sum = 0
+    for (let i = 0; i <= sum; ++i){
+        sum = sum + i
+    }
+    return sum
 }
 
-console.log(filterOutFalsy(`abc`))
+console.log(fName(5))
