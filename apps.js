@@ -1,9 +1,5 @@
-function fName(num){
-    let sum = 0
-    for (let i = 0; i <= sum; ++i){
-        sum = sum + i
-    }
-    return sum
+function convertToBoolean(arr){
+    return arr.map(elem => !!elem)
 }
 
-console.log(fName(5))
+console.log(convertToBoolean([``, NaN, false, null, false, 0]))
